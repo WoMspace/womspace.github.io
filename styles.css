@@ -1,5 +1,6 @@
 html {
-	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/705816123421098015/857316562667438080/bw-streetcorner.png");
+	/* background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/705816123421098015/857316867986817044/col-overlook.png"); */
+	background-image: url("https://cdn.discordapp.com/attachments/705816123421098015/857316867986817044/col-overlook.png");
 	background-position: center center;
 	background-clip: border-box;
 	background-size: auto;
@@ -23,26 +24,46 @@ p {
 	color: black;
 	font-family: 'Montserrat', sans-serif;
 }
-
-.container {
-	column-count: 3;
+div {
+	margin: 0px;
+	padding: 5%;
 }
+
+.column {
+	float: left;
+	width: 30%;
+	padding: 1.5%;
+	margin: 0px;
+}
+@media screen and (max-width: 600px) {
+	.column {
+		width: 100%;
+	}
+}
+
 .roundTop {
 	padding: 5%;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
+	border-top-left-radius: 0.5vmax;
+	border-top-right-radius: 0.5vmax;
 }
 .roundBottom {
 	padding: 5%;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 0.5vmax;
+	border-bottom-right-radius: 0.5vmax;
 }
 
 
 .blur {
 	background-color: rgba(255, 255, 255, 0.7);
+	/* backdrop-filter: blur(10px); */
+}
+@supports (backdrop-filter: none) {
+.blur {
+	background-color: rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(10px);
 }
+}
+
 .solid {
 	background-color: white;
 }
@@ -54,4 +75,13 @@ p {
 }
 .hover:hover {
 	backdrop-filter: blur(10px);
+}
+
+.screenshot {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 23vmin;
+}
+#epoch {
+	background-image: url(https://cdn.discordapp.com/attachments/705816123421098015/857316757017460756/vhs-city.png);
 }
