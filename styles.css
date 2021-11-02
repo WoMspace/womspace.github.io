@@ -1,0 +1,57 @@
+html {
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.discordapp.com/attachments/705816123421098015/857316562667438080/bw-streetcorner.png");
+	background-position: center center;
+	background-clip: border-box;
+	background-size: auto;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+body {
+	width: 60%;
+	margin: 0 auto;
+	padding: 5%;
+}
+h1 {
+	font-size: 400%;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	margin: 10% 30%;
+	padding: 5% 5%;
+	/* text-shadow: 0 0 5px black; */
+}
+p {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+	column-count: 3;
+}
+.roundTop {
+	padding: 5%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.roundBottom {
+	padding: 5%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+.blur {
+	background-color: rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(10px);
+}
+.solid {
+	background-color: white;
+}
+
+
+.hover {
+	background-image: inherit;
+	transition-duration: 200ms;
+}
+.hover:hover {
+	backdrop-filter: blur(10px);
+}
