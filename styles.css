@@ -3,7 +3,7 @@ html {
 	background-image: url("https://cdn.discordapp.com/attachments/705816123421098015/857316867986817044/col-overlook.png");
 	background-position: center center;
 	background-clip: border-box;
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	text-align: center;
 }
@@ -38,7 +38,7 @@ div {
 	padding: 1.5%;
 	margin: 0px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 	.column {
 		width: 100%;
 	}
