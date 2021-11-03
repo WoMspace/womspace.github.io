@@ -4,16 +4,44 @@ html {
 	background-position: center center;
 	background-clip: border-box;
 	background-size: cover;
+	/* background-attachment: fixed; */
 	background-repeat: no-repeat;
 	text-align: center;
 }
 body {
-	width: 60%;
 	margin: 0 auto;
+}
+header {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 1px;
+	top: 0px;
+	left: 0px;
+	position: sticky;
+	z-index: 10;
+}
+main {
+	display: inline-block;
+	min-width: 60%;
+	width: 70%;
+	max-width: 90%;
 	padding: 5%;
 }
+footer {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 1px;
+	top: 0px;
+	left: 0px;
+	position: sticky;
+	z-index: 9;
+}
 h1 {
+	display: inline-block;
 	font-size: 400%;
+	width: min-content;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
@@ -28,8 +56,7 @@ p {
 }
 div {
 	margin: 0px;
-	padding: 5%;
-	position: relative;
+	width: min(fit-content, inherit);
 }
 
 .column {
