@@ -4,7 +4,7 @@ html {
 	background-position: center center;
 	background-clip: border-box;
 	background-size: cover;
-	/* background-attachment: fixed; */
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	text-align: center;
 }
@@ -42,12 +42,18 @@ h1 {
 	display: inline-block;
 	font-size: 400%;
 	width: min-content;
-	color: white;
+	color: rgb(58, 58, 58);
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	margin: 10% 10%;
 	padding: 5% 5%;
-	text-shadow: 0px 0px 5px black;
+	/* text-shadow: 0px 0px 5px black; */
+}
+h2 {
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	font-size: 150%;
 }
 p {
 	color: black;
@@ -113,7 +119,7 @@ div {
 	border-left-color: #b0b0b0;
 	border-bottom-color: #505050;
 	border-right-color: #505050; */
-	border-color: #a0a0a0;
+	border-color: #707070;
 }
 
 .hover {
@@ -129,4 +135,7 @@ img.screenshot {
 	max-height: 100%;
 	padding: 0px;
 	margin: 0px;
+}
+a.link::after {
+	content: url("link.svg");
 }
