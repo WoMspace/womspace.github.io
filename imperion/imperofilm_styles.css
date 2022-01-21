@@ -1,0 +1,78 @@
+html {
+	font-family: 'IBM Plex Sans', sans-serif;
+	background-position: center center;
+	background-clip: border-box;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Josefin Slab', serif;
+	display: inline-block;
+	font-size: 400%;
+	width: min-content;
+	color: rgb(58, 58, 58);
+	font-weight: 700;
+	margin: 1% 1%;
+	padding: 1% 5%;
+}
+
+a {
+	color: black;
+}
+
+p {
+	font-size: 125%;
+	padding:1% 2%;
+	margin: auto;
+	width: min(1000px, 70%);
+}
+
+header {
+	margin: 0px;
+	padding: 0px;
+	width: 100vw;
+	height: 1px;
+	top: 0px;
+	left: 0px;
+	position: sticky;
+	z-index: 10;
+}
+
+.lumachrome{
+	font-family: 'Courgette', cursive;
+}
+
+.flex-container {
+	display:flex;
+}
+
+.flex-child {
+    flex: 1;
+	padding: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+.hover {
+	transition-duration: 200ms;
+	border-radius: 0px;
+	border-color: white;
+	border-style: solid;
+}
+.hover:hover {
+	border-radius: 1px;
+	border-color: black;
+}
+
+/* Color Theme Swatches in Hex */
+.Imperofilm-Subtle { color: #A84F80; }
+.Imperofilm-Alt { color: #F5D918; }
+.Imperofilm-Base { color: #F5006E; }
+.Imperofilm-Contrast { color: #18E0F5; }
+.Imperofilm-Contrast-Subtle { color: #0899A8; }
