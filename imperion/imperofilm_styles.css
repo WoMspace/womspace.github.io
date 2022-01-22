@@ -31,14 +31,18 @@ p {
 }
 
 header {
-	margin: 2%;
+	margin: 0px;
 	padding: 0px;
 	width: 100vw;
-	height: 1px;
 	top: 0px;
 	left: 0px;
 	position: sticky;
 	z-index: 10;
+
+	border-bottom-width: 4px;
+	border-bottom-color: #F5006E;
+	border-bottom-style: solid;
+	/* box-shadow: 0px 0px 3px black; */
 }
 
 .lumachrome{
@@ -47,6 +51,9 @@ header {
 
 .flex-container {
 	display:flex;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
 }
 
 .flex-child {
@@ -54,6 +61,7 @@ header {
 	padding: 1%;
 	margin-left: 1%;
 	margin-right: 1%;
+	margin-bottom: 1vh;
 }
 .flex-child:first-child {
     margin-right: 20px;
