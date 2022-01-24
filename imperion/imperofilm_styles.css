@@ -127,6 +127,13 @@ div.hover:hover, a.hover:hover {
 	border-color: black;
 }
 
+::selection {
+  background: #F5006E;
+}
+::-moz-selection {
+  background: #F5006E;
+}
+
 /* Color Theme Swatches in Hex */
 .Imperofilm-Subtle { color: #A84F80; }
 .Imperofilm-Alt { color: #F5D918; }
