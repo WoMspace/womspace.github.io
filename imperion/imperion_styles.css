@@ -1,0 +1,105 @@
+html {
+	font-family: 'IBM Plex Sans', sans-serif;
+	background-position: center center;
+	background-clip: border-box;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+main {
+	margin: 0px 10vw;
+	padding:1vw 5vw;
+}
+
+header {
+	margin: 0px;
+	border-width: 0%;
+	padding: 0px;
+	width: 100vw;
+	top: 0px;
+	left: 0px;
+	position: sticky;
+	z-index: 10;
+	background-color: white;
+	font-size: 120%;
+
+	border-bottom-width: 4px;
+	border-bottom-color: #5a7ba1;
+	border-bottom-style: solid;
+	box-shadow: 0px 0px 3px black;
+}
+
+h3 {
+	font-size: 15pt;
+	color: black;
+	padding: 2%;
+	margin: 0px;
+}
+h4 {
+	font-size: 11pt;
+	color: #404040;
+	padding: 2%;
+	margin: 0px;
+}
+
+
+
+.flex-container {
+	display: flex;
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+.flex-child {
+    flex: 1;
+	flex-shrink: 1;
+	padding: 1%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1vh;
+	margin-top: 1vh;
+}
+
+.flex-child:first-child {
+	margin-right: 20px;
+} 
+
+.grid-container {
+	display:grid;
+	/* grid-template-columns: repeat(2, 50%); */
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.border {
+	margin: 2%;
+	border-width: 1%;
+	padding: 6%;
+	border-style: solid;
+	border-color: black;
+}
+
+div.hover, a.hover {
+	transition-duration: 200ms;
+	border-color: white;
+	border-radius: 0px;
+	border-style: solid;
+	border-width: 3px;
+}
+div.hover:hover, a.hover:hover {
+	/* border-radius: 2vw; */
+	border-color: black;
+}
